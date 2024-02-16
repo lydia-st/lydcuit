@@ -1,7 +1,7 @@
 {
   "productName": "lydcuit",
   "version": "0.0.0",
-  "identifier": "com.tauri.dev",
+  "identifier": "io.gitlab.lydia-st",
   "build": {
     "beforeDevCommand": "trunk serve",
     "devUrl": "http://localhost:1420",
