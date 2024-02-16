@@ -1,0 +1,91 @@
+@import url('./public/css/variables.css');
+@import url('./public/css/boilerplate.css');
+
+.logo.leptos:hover {
+    filter: drop-shadow(0 0 2em #a82e20);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    background-color: var(--background-50);
+    color: var(--text-950);
+}
+
+
+main {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+section {
+
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid var(--background-50);
+    border-radius: 0.5em;
+    background-color: var(--background-100);
+
+    & .section__heading {
+        margin: 0;
+        padding: 0 0 0.5em 0;
+        color: var(--text-950);
+        border-bottom: 1px solid var(--background-200);
+
+        & h1, & p {
+            margin: 0;
+            padding: 0;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+    }
+}
+
+.link__row {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+
+    & a {
+        color: var(--text-950);
+        text-decoration: none;
+        border: 1px solid transparent;
+        transition: 0.3s ease;
+
+        &:has(img) {
+            background-color: var(--background-200);
+            padding: 0.5em;
+            border-radius: 0.5em;
+        }
+
+        & img {
+            max-height: 2em;
+            transition: filter 0.3s ease;
+        }
+
+        &:hover, &:focus {
+            color: var(--text-700);
+
+            &:has(img) {
+                background-color: var(--background-300);
+                border: 1px solid var(--background-200);
+            }
+        }
+
+        &:active {
+            color: var(--text-800);
+
+            &:has(img) {
+                background-color: var(--background-400);
+                border: 1px solid var(--background-600);
+            }
+        }
+
+    }
+
+}
+
