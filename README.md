@@ -34,13 +34,43 @@ cargo tauri android init # Only the first time
 cargo tauri android dev
 ```
 
+### Building
 
+To actually build binaries, you can use the following commands:
+
+> **ℹ️ Note**\
+> I'm fairly certain that you can only build for the platform you're on, eg. you can only build a `.deb`, `.rpm` or `.appimage` 
+> on Linux, and a `.exe` on Windows. This is except for Android (and maybe iOS? but probably only if on a Mac).
+> I'll test this at some point, maybe. [Relevant documentation](https://tauri.app/v1/guides/building/cross-platform)
+
+```bash
+# For desktop
+cargo tauri build
+
+# For Android
+cargo tauri android build # i think
+```
+
+## Contributing
+
+Any contributions are welcome. 
+
+> **⚠️ Warning**\
+> On GitHub? Please head over to the [GitLab] repository to contribute! This is just a mirror.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+# 
 
 [//]: # (Links)
 [Discuit]: https://discuit.net/
 [Tauri]: https://tauri.app/
 [Leptos]: https://leptos.dev/
 [Rust]: https://www.rust-lang.org/
+[GitLab]: https://gitlab.com/lydia-st/lydcuit
 
 [get-rust]: https://www.rust-lang.org/tools/install
 
